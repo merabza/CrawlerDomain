@@ -2,9 +2,11 @@
 
 // ReSharper disable CollectionNeverUpdated.Global
 
+using SystemTools.SystemToolsShared;
+
 namespace CrawlerDbModels;
 
-public sealed class SchemeModel
+public sealed class SchemeModel : ItemData
 {
     public int SchId { get; set; }
     public required string SchName { get; set; }

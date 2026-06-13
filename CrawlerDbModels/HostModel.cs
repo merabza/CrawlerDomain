@@ -1,10 +1,10 @@
-﻿
+﻿// ReSharper disable CollectionNeverUpdated.Global
 
-// ReSharper disable CollectionNeverUpdated.Global
+using SystemTools.SystemToolsShared;
 
 namespace CrawlerDbModels;
 
-public sealed class HostModel
+public sealed class HostModel : ItemData
 {
     public int HostId { get; set; }
     public required string HostName { get; set; }

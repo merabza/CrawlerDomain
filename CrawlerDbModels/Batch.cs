@@ -1,10 +1,10 @@
-﻿
+﻿// ReSharper disable CollectionNeverUpdated.Global
 
-// ReSharper disable CollectionNeverUpdated.Global
+using SystemTools.SystemToolsShared;
 
 namespace CrawlerDbModels;
 
-public sealed class Batch
+public sealed class Batch : ItemData
 {
     public int BatchId { get; set; }
     public required string BatchName { get; set; }
