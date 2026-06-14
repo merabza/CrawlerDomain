@@ -1,6 +1,4 @@
-﻿
-
-// ReSharper disable CollectionNeverUpdated.Global
+﻿// ReSharper disable CollectionNeverUpdated.Global
 
 using SystemTools.SystemToolsShared;
 
