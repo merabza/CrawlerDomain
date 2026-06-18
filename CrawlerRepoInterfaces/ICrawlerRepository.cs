@@ -61,6 +61,7 @@ public interface ICrawlerRepository
     void ClearTermsTail(int batchPartId, int urlId, int position);
     void EditTermByUrl(TermByUrl termByUrl, Term term);
     ContentAnalysis? GetContentAnalysis(int batchPartBpId, int urlId);
+    ContentAnalysis? GetContentAnalysisByUrlName(int batchPartBpId, string checkedUrlName);
     void DeleteContentAnalysis(ContentAnalysis contentAnalysis);
 
     UrlModel UpdateUrlData(UrlModel urlForProcess);
