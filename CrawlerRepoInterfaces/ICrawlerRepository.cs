@@ -31,6 +31,17 @@ public interface ICrawlerRepository
     Batch CreateBatch(Batch newBatch);
     Batch DeleteBatch(Batch batchForDelete);
 
+    List<TaskModel> GetTasksList();
+    TaskModel? GetTaskByName(string taskName);
+    TaskModel CreateTask(TaskModel newTask);
+    TaskModel UpdateTask(TaskModel task);
+    TaskModel DeleteTask(TaskModel taskForDelete);
+
+    TaskStartPoint AddStartPoint(int taskId, string startPoint);
+    TaskStartPoint? GetStartPoint(int taskId, string startPoint);
+    TaskStartPoint UpdateStartPoint(TaskStartPoint startPointForUpdate);
+    TaskStartPoint DeleteStartPoint(TaskStartPoint startPointForDelete);
+
     HostModel CheckAddHostName(string hostName);
     ExtensionModel CheckAddExtensionName(string extensionName);
     SchemeModel CheckAddSchemeName(string schemeName);
